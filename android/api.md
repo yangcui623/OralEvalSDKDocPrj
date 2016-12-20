@@ -323,3 +323,12 @@
 |参数 audioData|录音数据。数据格式根据[OralEvalSDKFactory.StartConfig](#oralevalsdkfactorystartconfig).setMp3Audio()设置|
 |参数 offset| 实时录音的音频音量值，0-100范围|
 |参数 len 实时录音的音频音量值，0-100范围|
+
+<br/>
+* public void onStartOralEval()
+
+| | |
+| ----- | ----- |
+| 说明| 录音结束回调 |
+|版本支持| 3.6.24 |
+
