@@ -41,7 +41,7 @@
 | 说明| 设置http代理服务地址。一般不用设置，使用默认值即可 |
 |版本支持| 最低2.0.0 |
 |参数 online_ip|服务的域名或者ip地址及端口号|
-|eg:edu.hivoice.cn:80|
+|eg ：|edu.hivoice.cn:80|
 
 <br/>
 * public static [OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror) initOfflineSDK(Context context, String workingDir)
