@@ -27,10 +27,21 @@
 
 | | |
 | -----| ------ |
-| 说明| 设置服务地址。一般不用设置，使用默认值即可 |
+| 说明| 设置socket评测方式服务地址。一般不用设置，使用默认值即可 |
 |版本支持| 最低2.0.0 |
 |参数 server|服务的域名或者ip地址|
 |参数 port|服务的tcp端口|
+
+<br/>
+
+* public static void setOnline_ip(String online_ip)
+
+| | |
+| -----| ------ |
+| 说明| 设置http代理服务地址。一般不用设置，使用默认值即可 |
+|版本支持| 最低2.0.0 |
+|参数 online_ip|服务的域名或者ip地址及端口号|
+|eg:edu.hivoice.cn:80|
 
 <br/>
 * public static [OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror) initOfflineSDK(Context context, String workingDir)
