@@ -39,7 +39,7 @@
 | | |
 | -----| ------ |
 | 说明| 设置http代理服务地址。一般不用设置，使用默认值即可 |
-|版本支持| 最低2.0.0 |
+|版本支持| 最低2.6.24 |
 |参数 online_ip|服务的域名或者ip地址及端口号|
 |eg ：|edu.hivoice.cn:80|
 
@@ -199,6 +199,17 @@
 | 说明|设置本地音频数据回调的音频数据格式|
 |版本支持| 最低2.0.0 |
 |参数 mp3Audio|true，则以mp3格式输出， 否则以16k，16bit有符号整数，单声道pcm格式输出|
+
+<br/>
+
+* public void setHost_ip(String host)
+
+| | |
+| -----| ------ |
+| 说明| 设置http评测host头域 |
+|版本支持| 最低2.6.25 |
+|参数 host|域名字符串，一般不需要设置|
+
 
 <br/>
 * public void setBufferLog(boolean bufferLog)
