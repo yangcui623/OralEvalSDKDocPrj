@@ -8,9 +8,11 @@
  * [SDKError](#ioralevalsdkerror)
  * [Json字段说明](#result-description)
 
+
 <br/>
 ### <a name="oralevalsdkfactory"></a>OralEvalSDKFactory
 <br/>
+
 
 评测静态工厂类，用于设置评测服务地址、初始化离线引擎、发起评测等。
 
