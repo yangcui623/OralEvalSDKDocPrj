@@ -10,6 +10,7 @@
 
 
 <br/>
+
 ### <a name="oralevalsdkfactory"></a>OralEvalSDKFactory
 <br/>
 
@@ -17,6 +18,7 @@
 评测静态工厂类，用于设置评测服务地址、初始化离线引擎、发起评测等。
 
 <br/>
+
 * public final static String SDK_VERSION; 
 
 |  |  |
@@ -25,6 +27,7 @@
 | 版本支持 | 最低2.0.0 | 
 
 <br/>
+
 * public static void initServerAndPort(String server, int port)
 
 
@@ -47,6 +50,7 @@
 |eg ：|edu.hivoice.cn:80|
 
 <br/>
+
 * public static [OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror) initOfflineSDK(Context context, String workingDir)
 
 | | |
@@ -58,6 +62,7 @@
 |返回值|初始化正确返回NOERROR；其他错误参考[OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror)的说明|
 
 <br/>
+
 * public static void cleanupOfflineSDK(Context context)
 
 | | |
@@ -67,6 +72,7 @@
 |参数 context|android.content.Context实例，比如一个Activity|
 
 <br/>
+
 * public static [IOralEvalSDK](#ioralevalsdk) start(Context context, [StartConfig](#oralevalsdkfactorystartconfig) cfg, [ICallback](#ioralevalsdkicallback) cb)
 
 | | |
@@ -78,12 +84,14 @@
 |参数 cb|监听接口，用于接收评测结果，实时音量，实时语音数据，和错误信息，详见[ICallback](#ioralevalsdkicallback)|
 
 <br/>
+
 #### <a name="oralevalsdkfactorystartconfig"></a>OralEvalSDKFactory.StartConfig
 <br/>
 
 评测参数类。标识了所有评测的参数设置。
 
 <br/>
+
 * public StartConfig(String oralText)
 
 | | |
@@ -104,6 +112,7 @@
 |参数 uid|用户标识，如用户名等可以唯一识别用户的字符串|
 
 <br/>
+
 * public void setVadEnable(boolean vadEnable)
 
 | | |
@@ -113,6 +122,7 @@
 |参数 vadEnable|true启用VAD，false不启用VAD，默认不启动|
 
 <br/>
+
 * public void setVadBeforeMs(int vadBeforeMs)
 
 | | |
@@ -122,6 +132,7 @@
 |参数 vadBeforeMs|最长前置静音时间，默认2000(毫秒)|
 
 <br/>
+
 * public void setVadAfterMs(int vadAfterMs)
 
 | | |
@@ -131,6 +142,7 @@
 |参数 vadAfterMs|最长后置静音时间，默认2000(毫秒)。此参数最大值支持3000毫秒，大于3000毫秒内部按照3000毫秒处理|
 
 <br/>
+
 * public void set_useOfflineWhenFailedToConnectToServer(boolean _useOfflineWhenFailedToConnectToServer)
 
 | | |
@@ -140,6 +152,7 @@
 |参数 _useOfflineWhenFailedToConnectToServer|true启动混合评测，false仅使用在线评测。默认为false|
 
 <br/>
+
 * public void setOralText(String oralText)
 
 | | |
@@ -150,6 +163,7 @@
 |注意|请不要传递空字符串，否则有可能会抛出IllegalArgumentException异常|
 
 <br/>
+
 * public void setScoreAdjuest(float scoreAdjuest)
 
 | | |
@@ -159,6 +173,7 @@
 |参数 scoreAdjuest|得分系数。具体值请咨询客户经理|
 
 <br/>
+
 * public void setServiceType(String serviceType)
 
 | | |
@@ -168,6 +183,7 @@
 |参数 serviceType|需要评测的模式。具体参考评测模式说明文档|
 
 <br/>
+
 * public void setConnectTimeout(int connectTimeout)
 
 | | |
@@ -177,6 +193,7 @@
 |参数 connectTimeout|连接评测服务时的超时时间，单位为毫秒。默认值为1000毫秒|
 
 <br/>
+
 * public void setVolumeReport(boolean on)
 
 | | |
@@ -186,6 +203,7 @@
 |参数 on|true为打开上报，flase关闭上报。默认为true|
 
 <br/>
+
 * public void setAudioStream(InputStream audioStream)
 
 | | |
@@ -195,6 +213,7 @@
 |参数 audioStream|不为空，则从该流中读取音频评测， 否则从麦克风录音评测。默认从麦克风录音评测|
 
 <br/>
+
 * public void setMp3Audio(boolean mp3Audio)
 
 | | |
@@ -215,6 +234,7 @@
 
 
 <br/>
+
 * public void setBufferLog(boolean bufferLog)
 
 | | |
@@ -224,6 +244,7 @@
 |参数 bufferLog|true，内部保存Log；否则，内部不保存Log|
 
 <br/>
+
 ### <a name="ioralevalsdk"></a> IOralEvalSDK
 
 <br/>
@@ -238,6 +259,7 @@
 |版本支持| 最低2.0.0 |
 
 <br/>
+
 * public String getLog()
 
 | | |
@@ -248,12 +270,14 @@
 |版本支持| 最低2.6.5 |
 
 <br/>
+
 #### <a name="ioralevalsdkofflinesdkpreparationerror"></a> IOralEvalSDK.OfflineSDKError
 <br/>
 
 离线SDK错误类型
 
 <br/>
+
 枚举值：
 <br/>
 
@@ -273,6 +297,7 @@
 |TIMEOUT|超时|最低3.0.0
 
 <br/>
+
 #### <a name="ioralevalsdkerror"></a> SDKError
 <br/>
 
@@ -288,6 +313,7 @@
 目前阶段后端还有缺陷，不能正确返回所有错误码，故同时需要httpErrorMessage供定位问题。
 
 <br/>
+
 #### <a name="ioralevalsdkicallback"></a> IOralEvalSDK.ICallback
 <br/>
 
@@ -295,6 +321,7 @@
 此接口的方法，由SDK在工作线程中调用，因此不是在UI主线程。且为了正常执行评测过程不能在此接口的方法中执行阻塞或耗时操作
 
 <br/>
+
 * public void onStart([IOralEvalSDK](#ioralevalsdk) who, int audioRecorderSessionId)
 
 | | |
@@ -305,6 +332,7 @@
 |参数 audioRecorderSessionId|从麦克风录音评测时，启动的AudioRecord实例的AudioSessionId，对应AudioRecord.getAudioSessionId()方法的返回值。如果无法正常取得AudioSessionId，则为-1|
 
 <br/>
+
 * public void onError([IOralEvalSDK](#ioralevalsdk) who, [SDKError](#ioralevalsdkerror) error, [OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror) offlineError)
 
 | | |
@@ -316,6 +344,7 @@
 |参数 offlineError| 离线评测错误的原因值 |
 
 <br/>
+
 * public void onStop([IOralEvalSDK](#ioralevalsdk) who, String result, boolean isOffline, String url, EndReason stopType)
 
 | | |
@@ -329,6 +358,7 @@
 |参数 stopType| 结束评测的原因。UserAction是调用[IOralEvalSDK](#ioralevalsdk).stop()结束，VoiceEnd是VAD检测到完成说话结束，NoVoice是VAD检测到长时间没有人说话结束,InputStreamEnd是当使用非mic音频源评测时，音频流结束或读取失败|
 
 <br/>
+
 * public void onVolume([IOralEvalSDK](#ioralevalsdk) who, int value)
 
 | | |
@@ -339,6 +369,7 @@
 |参数 value| 实时录音的音频音量值，0-100范围|
 
 <br/>
+
 * public void onAudioData([IOralEvalSDK](#ioralevalsdk) who, byte[] audioData, int offset, int len)
 
 | | |
@@ -350,6 +381,7 @@
 |参数 len 实时录音的音频音量值，0-100范围|
 
 <br/>
+
 * public void onStartOralEval()
 
 | | |
@@ -358,6 +390,7 @@
 |版本支持| 3.6.24 |
 
 <br/>
+
 ### <a name="result-description"></a> Json字段说明
 <br/>
 
