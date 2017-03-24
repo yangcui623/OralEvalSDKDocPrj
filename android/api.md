@@ -194,6 +194,16 @@
 
 <br/>
 
+* public void setSocket_timeout(int socket_timeout)
+
+| | |
+| ----- | ----- |
+| 说明|动态设置stop超时时间接口|
+|版本支持| 最低3.6.27 |
+|参数 socket_timeout|动态设置stop超时时间接口，在不设置的情况下默认使用现在SDK的超时时间机制，单位为毫秒。(建议默认使用现在SDK的超时时间机制)|
+
+<br/>
+
 * public void setVolumeReport(boolean on)
 
 | | |
