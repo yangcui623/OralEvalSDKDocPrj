@@ -8,9 +8,10 @@
  * [SDKError](#ioralevalsdkerror)
  * [JSON字段说明](#Json)
  
-<br/>
+ 
+
 ### <a name="oralevalsdkfactory"></a>OralEvalSDKFactory
-<br/>
+
 
 评测静态工厂类，用于设置评测服务地址、初始化离线引擎、发起评测等。
 
@@ -64,9 +65,9 @@
 |参数 cfg|评测参数，详见[StartConfig](#oralevalsdkfactorystartconfig)|
 |参数 cb|监听接口，用于接收评测结果，实时音量，实时语音数据，和错误信息，详见[ICallback](#ioralevalsdkicallback)|
 
-<br/>
+
 #### <a name="oralevalsdkfactorystartconfig"></a>OralEvalSDKFactory.StartConfig
-<br/>
+
 
 评测参数类。标识了所有评测的参数设置。
 
@@ -260,9 +261,9 @@
 |返回值|从上次取出Log后开始，到目前为止，该次评测内部的Log|
 |版本支持| 最低2.6.5 |
 
-<br/>
+
 #### <a name="ioralevalsdkofflinesdkpreparationerror"></a> IOralEvalSDK.OfflineSDKError
-<br/>
+
 
 离线SDK错误类型
 
@@ -285,9 +286,9 @@
 |UNKNOWN |未知错误。遇到次错误联系云知声 |最低2.0.0
 |TIMEOUT|超时|最低3.0.0
 
-<br/>
+
 #### <a name="ioralevalsdkerror"></a> SDKError
-<br/>
+
 
 在线SDK错误类型和错误码(Category和对应的errno)：
 
@@ -300,9 +301,9 @@
 
 目前阶段后端还有缺陷，不能正确返回所有错误码，故同时需要httpErrorMessage供定位问题。
 
-<br/>
+
 #### <a name="ioralevalsdkicallback"></a> IOralEvalSDK.ICallback
-<br/>
+
 
 评测回调接口。由评测发起者实现，用于接收评测结果、评测录音等信息。
 此接口的方法，由SDK在工作线程中调用，因此不是在UI主线程。且为了正常执行评测过程不能在此接口的方法中执行阻塞或耗时操作
