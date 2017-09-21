@@ -116,7 +116,7 @@
 | ----- | ----- |
 | 说明|设置最长前置静音时间。即如果评测开始后的vadBeforeMs毫秒内没有检测到说话，就自动结束。对应[ICallback](#ioralevalsdkicallback)中的onStop()方法中的EndReason为NoVoice|
 |版本支持| 最低2.0.0， 3.0.0之后的版本将停止类型从int改为枚举 |
-|参数 vadBeforeMs|最长前置静音时间，默认2000(毫秒)|
+|参数 vadBeforeMs|最长前置静音时间，默认2000(毫秒)，最大值3000(毫秒)，最小值1000(毫秒)|
 
 <br/>
 * public void setVadAfterMs(int vadAfterMs)
@@ -125,7 +125,7 @@
 | ----- | ----- |
 | 说明|设置最长后置静音时间。即如果检测到说话后，在vadAfterMs毫秒内一直没有检测到说话，就自动结束。对应[ICallback](#ioralevalsdkicallback)中的onStop()方法中的EndVoice为VoiceEnd|
 |版本支持| 最低2.0.0， 3.0.0之后的版本将停止类型从int改为枚举 |
-|参数 vadAfterMs|最长后置静音时间，默认2000(毫秒)。此参数最大值支持3000毫秒，大于3000毫秒内部按照3000毫秒处理|
+|参数 vadAfterMs|最长后置静音时间，默认2000(毫秒)。此参数最大值支持3000毫秒，大于3000毫秒内部按照3000毫秒处理，最小值1000(毫秒)|
 
 <br/>
 * public void set_useOfflineWhenFailedToConnectToServer(boolean _useOfflineWhenFailedToConnectToServer)
