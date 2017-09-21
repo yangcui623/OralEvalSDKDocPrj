@@ -35,7 +35,7 @@
 |参数 port|服务的tcp端口|
 
 <br/>
-* public static [IOralEvalSDK.OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror) initOfflineSDK(Context context, String workingDir)
+* public static <a href="#ioralevalsdkofflinesdkpreparationerror">IOralEvalSDK.OfflineSDKError</a> initOfflineSDK(Context context, String workingDir)
 
 | | |
 | ----- | ----- |
