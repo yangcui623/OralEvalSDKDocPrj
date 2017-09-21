@@ -399,9 +399,8 @@
 | 说明| 录音结束回调 |
 |版本支持| 3.6.24 |
 
-<br/>
-###<a name="Json"></a>评测返回结果中Json字段说明
-<br/>
+
+### <a name="Json"></a>评测返回结果中Json字段说明
 
 |  |  |  |
 |  -----  |  -----  |  -----  |
@@ -432,4 +431,7 @@
 |  keysIntegrity  |  array  |  关键词完整度得分  |
 |  keysFluency  |  array  |  关键词流利度  |
 |  audiocheck  |  array  |  音质检测结果。volume：音量过小的置信度；clipping：截幅的置信度；noise：噪音过大的置信度；cut:截断的置信度；too  short：是否音频过短；emptyAudio：是否是空音频。备注：置信度的范围是0-10，数字越大，表示存在问题的可能性越大  |
+
+### 常见问题FAQ
+<a href="https://github.com/oraleval/FAQ-Docs/blob/master/FAQ.md">FAQ</a>|
 
