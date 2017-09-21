@@ -35,7 +35,7 @@
 |参数 port|服务的tcp端口|
 
 <br/>
-* public static [OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror) initOfflineSDK(Context context, String workingDir)
+* public static [IOralEvalSDK.OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror) initOfflineSDK(Context context, String workingDir)
 
 | | |
 | ----- | ----- |
@@ -43,7 +43,7 @@
 |版本支持| 最低2.0.0 |
 |参数 context| android.content.Context实例，比如一个Activity|
 |参数 workingDir|离线引擎模型的解压的位置|
-|返回值|初始化正确返回NOERROR；其他错误参考[OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror)的说明|
+|返回值|初始化正确返回NOERROR；其他错误参考[IOralEvalSDK.OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror)的说明|
 
 <br/>
 * public static void cleanupOfflineSDK(Context context)
