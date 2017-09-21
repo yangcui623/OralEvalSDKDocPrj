@@ -233,7 +233,7 @@
 ### <a name="ioralevalsdk"></a> IOralEvalSDK
 
 <br/>
-评测实例，从[OralEvalSDKFactory](#oralevalsdkfactory).start()创建。一个时刻只能有一个评测实例。
+评测实例，从<a href="#oralevalsdkfactory">OralEvalSDKFactory</a>.start()创建。一个时刻只能有一个评测实例。
 <br/>
 
 * public void cancel()
@@ -248,7 +248,7 @@
 
 | | |
 | ----- | ----- |
-| 说明| 停止评测，将会在[IOralEvalSDK.ICallback](#ioralevalsdkicallback).onStop()回调中得到结果，或者[IOralEvalSDK.ICallback](#ioralevalsdkicallback).onError()中捕获错误|
+| 说明| 停止评测，将会在 <a href="#ioralevalsdkicallback">IOralEvalSDK.ICallback</a>.onStop()回调中得到结果，或者[IOralEvalSDK.ICallback](#ioralevalsdkicallback).onError()中捕获错误|
 |版本支持| 最低2.0.0 |
 
 <br/>
