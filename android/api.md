@@ -6,7 +6,8 @@
 	* [IOralEvalSDK.OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror)
  	* [IOralEvalSDK.ICallback](#ioralevalsdkicallback)
  * [SDKError](#ioralevalsdkerror)
-
+ * [JSON字段说明](#Json)
+ 
 <br/>
 ### <a name="oralevalsdkfactory"></a>OralEvalSDKFactory
 <br/>
@@ -398,8 +399,9 @@
 | 说明| 录音结束回调 |
 |版本支持| 3.6.24 |
 
-###  评测返回结果中Json字段说明
-
+<br/>
+###<a name="Json"></a>评测返回结果中Json字段说明
+<br/>
 
 |  |  |  |
 |  -----  |  -----  |  -----  |
