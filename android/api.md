@@ -55,7 +55,7 @@
 |参数 context|android.content.Context实例，比如一个Activity|
 
 <br/>
-* public static [IOralEvalSDK](#ioralevalsdk) start(Context context, [StartConfig](#oralevalsdkfactorystartconfig) cfg, [ICallback](#ioralevalsdkicallback) cb)
+* public static <a href="#ioralevalsdk"> IOralEvalSDK </a> start(Context context, <a href="#oralevalsdkfactorystartconfig"> StartConfig </a> cfg, <a href="#ioralevalsdkicallback">  ICallback </a> cb)
 
 | | |
 | ----- | ----- |
@@ -319,7 +319,7 @@
 |参数 audioRecorderSessionId|从麦克风录音评测时，启动的AudioRecord实例的AudioSessionId，对应AudioRecord.getAudioSessionId()方法的返回值。如果无法正常取得AudioSessionId，则为-1|
 
 <br/>
-* public void onError([IOralEvalSDK](#ioralevalsdk) who, [SDKError](#ioralevalsdkerror) error, [OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror) offlineError)
+* public void onError <a href="#ioralevalsdk">IOralEvalSDK</a> who, <a href="#ioralevalsdkerror">SDKError</a>  error,  <a href="#ioralevalsdkofflinesdkpreparationerror">OfflineSDKError</a> offlineError)
 
 | | |
 | ----- | ----- |
@@ -330,7 +330,7 @@
 |参数 offlineError| 离线评测错误的原因值 |
 
 <br/>
-* public void onStop([IOralEvalSDK](#ioralevalsdk) who, String result, boolean isOffline, String url, EndReason stopType)
+* public void onStop(<a href="#ioralevalsdk">IOralEvalSDK</a> who, String result, boolean isOffline, String url, EndReason stopType)
 
 | | |
 | ----- | ----- |
@@ -351,7 +351,7 @@
 |版本支持| 最低3.6.16 |
 
 <br/>
-* public void onVolume([IOralEvalSDK](#ioralevalsdk) who, int value)
+* public void onVolume(<a href="#ioralevalsdk">IOralEvalSDK</a> who, int value)
 
 | | |
 | ----- | ----- |
@@ -361,7 +361,7 @@
 |参数 value| 实时录音的音频音量值，0-100范围|
 
 <br/>
-* public void onAudioData([IOralEvalSDK](#ioralevalsdk) who, byte[] audioData, int offset, int len)
+* public void onAudioData(<a href="#ioralevalsdk">IOralEvalSDK</a> who, byte[] audioData, int offset, int len)
 
 | | |
 | ----- | ----- |
@@ -372,7 +372,7 @@
 |参数 len 实时录音的音频音量值，0-100范围|
 
 <br/>
-* public void onOpusData([IOralEvalSDK](#ioralevalsdk) who, byte[] opusData, int offset, int len)
+* public void onOpusData(<a href="#ioralevalsdk">IOralEvalSDK</a> who, byte[] opusData, int offset, int len)
 
 | | |
 | ----- | ----- |
@@ -383,7 +383,7 @@
 |参数 len |实时录音的opus流数据的总长度|
 
 <br/>
-* public void onAsyncResult([IOralEvalSDK](#ioralevalsdk) who, String url);
+* public void onAsyncResult([<a href="#ioralevalsdk">IOralEvalSDK</a> who, String url);
 
 | | |
 | ----- | ----- |
