@@ -162,7 +162,7 @@
 | ----- | ----- |
 | 说明|设置评测模式|
 |版本支持| 最低2.0.0 |
-|参数 serviceType|需要评测的模式。具体参考评测模式说明文档|
+|参数 serviceType|需要评测的模式。具体参考<a href="https://github.com/oraleval/FAQ-Docs/blob/master/%E4%BA%91%E7%9F%A5%E5%A3%B0%E8%AF%84%E6%B5%8B%E6%A8%A1%E5%BC%8F%E8%AF%B4%E6%98%8E_v1.2.pdf">评测模式说明文档</a>|
 
 <br/>
 * public void setConnectTimeout(int connectTimeout)
