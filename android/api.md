@@ -10,7 +10,7 @@
  
  
  
-### <a herf="https://github.com/oraleval/OralEvalSDKDocPrj/blob/master/android/%E8%AF%84%E6%B5%8Bsdk%E6%B5%81%E7%A8%8B%E5%9B%BE.pdf">SDK调用流程图</a> 
+### <a href="https://github.com/oraleval/OralEvalSDKDocPrj/blob/master/android/%E8%AF%84%E6%B5%8Bsdk%E6%B5%81%E7%A8%8B%E5%9B%BE.pdf">SDK调用流程图</a> 
  
 
 ### <a name="oralevalsdkfactory"></a>OralEvalSDKFactory
