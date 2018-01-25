@@ -151,6 +151,15 @@
 |注意|请不要传递空字符串，否则有可能会抛出IllegalArgumentException异常|
 
 <br/>
+* public void setOralEvalMode(OralEvalEnum.OnlineUS)
+
+| | |
+| ----- | ----- |
+| 说明|设置评测语言|
+|版本支持| 最低3.6.29 |
+|参数 enum|需要评测的语言种类默认为英文。<!--文本的具体要求请参考[评测输入输出说明](评测输入输出说明.md)-->|
+|注意|目前仅支持OralEvalEnum.OnlineUS和OralEvalEnum.OnlineCH|
+<br/>
 * public void setScoreAdjuest(float scoreAdjuest)
 
 | | |
