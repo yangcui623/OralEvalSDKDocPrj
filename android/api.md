@@ -9,8 +9,11 @@
  * [JSON字段说明](#Json)
  
  
+ **说明：Android SDK V3.6.31版本及之后的版本，SDK内部做了混淆设置，业务层在做混淆的时候，不需要对oraleval-android-sdk.jar 进行混淆，如果需要混淆，<a href=https://github.com/oraleval/FAQ-Docs/blob/master/mix.md>请查看混淆配置文件</a>**
  
-### <a href="https://github.com/oraleval/OralEvalSDKDocPrj/blob/master/android/%E8%AF%84%E6%B5%8Bsdk%E6%B5%81%E7%A8%8B%E5%9B%BE.pdf">SDK调用流程图</a> 
+### SDK调用流程图
+
+> ![image](https://github.com/oraleval/OralEvalSDKDocPrj/blob/master/评测sdk流程图.png)
  
 
 ### <a name="oralevalsdkfactory"></a>OralEvalSDKFactory
