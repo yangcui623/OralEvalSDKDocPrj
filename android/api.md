@@ -383,8 +383,8 @@
 | 说明| 评测实时录音数据回调 |
 |版本支持| 最低2.0.0 |
 |参数 audioData|录音数据。数据格式根据[OralEvalSDKFactory.StartConfig](#oralevalsdkfactorystartconfig).setMp3Audio()设置|
-|参数 offset| 返回音频bytes的起始位置偏移量 |
-|参数 len|是bytes 长度|
+|参数 offset| 实时录音流数据的偏移值 |
+|参数 len|实时录音流数据的总长度|
 
 <br/>
 * public void onOpusData(<a href="#ioralevalsdk">IOralEvalSDK</a> who, byte[] opusData, int offset, int len)
