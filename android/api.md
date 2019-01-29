@@ -182,7 +182,7 @@
 
 <br/>
 * public void setConnectTimeout(int connectTimeout)
-
+ 
 | | |
 | ----- | ----- |
 | 说明|设置在线评测时连接服务器的超时时间。对应java.net.socket.connect()中超时参数|
